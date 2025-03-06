@@ -1,0 +1,20 @@
+vars:
+  token: {{ TOKEN }} # GH classic token with all repo: read permissions
+  owner: open-telemetry
+
+policy:
+  catalogs:
+    - OSPS_B
+  applicability:
+    - Maturity Level 1
+
+write-directory: evaluation_results
+services:
+  opentelemetry-java:
+    plugin: github-repo
+    vars:
+      repo: opentelemetry-java
+  opentelemetry-java-contrib:
+    plugin: github-repo
+    vars:
+      repo: opentelemetry-java-contrib
