@@ -7,6 +7,8 @@ policy:
     - OSPS_B
   applicability:
     - Maturity Level 1
+    - Maturity Level 2
+    - Maturity Level 3
 
 write-directory: evaluation_results
 services:
